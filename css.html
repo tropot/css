@@ -4,8 +4,8 @@
 <style> 
 input[type=submit] {
   width: 50%;
-  background-color: #eeff00;
-  color: white;
+  background-color: #c3eed3;
+  color: rgb(0, 0, 0);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -14,18 +14,24 @@ input[type=submit] {
 }
 
 .forms{
+    pos
     display:block;
     padding: 1em;
     margin: 2em;
-    border: 3px solid #ddd;
-    background-color: #eee;
-    max-width: 800px;
 }
 .login{
-    float: left;
+    position: fixed;
+    top: 180px;
+    right: 1200px;
+    width: 200px;
+    height: 100px;
 }
 .registration{
-    float: right;
+    position: fixed;
+    top: 180px;
+    right:500px;
+    width: 400px;
+    height: 400px;
 }
 
 
@@ -35,7 +41,7 @@ input[type=submit] {
 
 
 <div class="forms" >
-    <div class="login" style="float:left;">
+    <div class="login" >
         <form>
             <label for="fname">First Name</label>
             <br style="clear:both;" />
@@ -48,25 +54,40 @@ input[type=submit] {
             <input type="submit" value="Submit">
         </form>
     </div>
-    <div class="registration" style="float:right;">
+    <div class="registration" >
         <form>
             <label for="fname">First Name</label>
-            <input type="text"  name="fname">
-            <input type="text"  name="lname">
-            <input type="text"  name="password">
-            <input type="text"  name="comfirmpassword">
-            <input type="text"  name="month">
-            <input type="text"  name="day">
-            <input type="text"  name="year">
-            <input type="text"  name="gender">
-            <input type="text"  name="phonenumber">
-            <input type="text"  name="email">
-            <input type="text"  name="adress">
-            <input type="text"  name="city">
-            <input type="text"  name="state">
-            <input type="text"  name="postal code">
-            <input type="text"  name="country">
+                <input type="text"  name="fname">
+            <label for="lname">First Name</label>
+                <input type="text"  name="lname">
+            <label for="password">First Name</label>
+                <input type="text"  name="password">
+            <label for="comfirmpassword">First Name</label>
+                <input type="text"  name="comfirmpassword">
+            <label for="month">First Name</label>
+                <input type="text"  name="month">
+            <label for="day">First Name</label>
+                <input type="text"  name="day">
+            <label for="year">First Name</label>
+                <input type="text"  name="year">
+            <label for="gender">First Name</label>
+                <input type="text"  name="gender">
+            <label for="phonenumber">First Name</label>
+                <input type="text"  name="phonenumber">
+            <label for="email">First Name</label>
+                <input type="text"  name="email">
+            <label for="adress">First Name</label>
+                <input type="text"  name="adress">
+            <label for="city">First Name</label>
+                <input type="text"  name="city">
+            <label for="state">First Name</label>
+                <input type="text"  name="state">
+            <label for="postalcode">First Name</label>
+                <input type="text"  name="postalcode">
+            <label for="country">First Name</label>
+                <input type="text"  name="country">
             <input id="checkbox" type="checkbox">
+
             <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
             <input type="submit" value="Submit">
             
