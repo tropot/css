@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style> 
 label { display: inline-block; width: 210px; text-align: left; font-family: Arial;}
 .location{
     display: flex;
+}
+.birth{
+    display: flex;
+    text-align:justify;
+    
 }
 input[type=submit] {
   width: 50%;
@@ -36,6 +42,32 @@ input[type=submit] {
     width: 500px;
     height: 10000px;
 }
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
 
 
 </style>
@@ -55,6 +87,19 @@ input[type=submit] {
             
             <input type="text" id="lname" name="lname">
             <input type="submit" value="Submit">
+            <body style="text-align:center; padding:1em">
+                <div class="col">
+                    <a href="#" class="fb btn">
+                      <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                     </a>
+                    <a href="#" class="twitter btn">
+                      <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                    </a>
+                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                      </i> Login with Google+
+                    </a>
+                  </div>
+            </body>
         </form>
     </div>
     <div class="registration" >
@@ -72,15 +117,17 @@ input[type=submit] {
             <label for="comfirmpassword">Comfirm Password*</label>
                 <input type="text"  name="comfirmpassword">
                 <br style="clear:both;" />
-            <label for="month">Date of Birth*</label>
+                <div class = "birth">
+                <label for="month">Date of Birth*</label>
                 <input type="text" placeholder="MM"  name="month" style="width: 3%;">
                 <input type="text" placeholder="DD" name="day" style="width: 3%;">
                 <input type="text" placeholder="YYYY" name="year" style="width: 6%;">
-            <label for="gender" style="text-align: left">Gender</label>
+                <label for="gender" style="text-align: right">Gender</label>
                 <select name="gender">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
+                </div>
                 <br style="clear:both;" />
             <label for="phonenumber">Mobile/Cell No.*</label>
                 <input type="text"  name="phonenumber">
@@ -112,9 +159,10 @@ input[type=submit] {
                 <input type="text"  name="postalcode">
             <label for="country">Country*</label>
                 <input type="text"  name="country">
+                <br style="clear:both;" />
             <input id="checkbox" type="checkbox">
-            <br style="clear:both;" />
-            <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+            
+            <label style = "width: fit-content;" for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
             <br style="clear:both;" />
             <input type="submit" value="Submit">
             
