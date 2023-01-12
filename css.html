@@ -2,7 +2,10 @@
 <html>
 <head>
 <style> 
-label { display: inline-block; width: 210px; text-align: left; }
+label { display: inline-block; width: 210px; text-align: left; font-family: Arial;}
+.location{
+    display: flex;
+}
 input[type=submit] {
   width: 50%;
   background-color: #c3eed3;
@@ -15,7 +18,6 @@ input[type=submit] {
 }
 
 .forms{
-    pos
     display:block;
     padding: 1em;
     margin: 2em;
@@ -57,6 +59,7 @@ input[type=submit] {
     </div>
     <div class="registration" >
         <form>
+            
             <label for="fname">First Name*</label>
                 <input type="text"  name="fname">
                 <br style="clear:both;" />
@@ -70,11 +73,14 @@ input[type=submit] {
                 <input type="text"  name="comfirmpassword">
                 <br style="clear:both;" />
             <label for="month">Date of Birth*</label>
-                <input type="text" placeholder="MM"  name="month" style="width: 5%;">
-                <input type="text" placeholder="DD" name="day" style="width: 5%;">
-                <input type="text" placeholder="YYYY" name="year" style="width: 10%;">
-            <label for="gender">Gender</label>
-                <input type="text"  name="gender">
+                <input type="text" placeholder="MM"  name="month" style="width: 3%;">
+                <input type="text" placeholder="DD" name="day" style="width: 3%;">
+                <input type="text" placeholder="YYYY" name="year" style="width: 6%;">
+            <label for="gender" style="text-align: left">Gender</label>
+                <select name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
                 <br style="clear:both;" />
             <label for="phonenumber">Mobile/Cell No.*</label>
                 <input type="text"  name="phonenumber">
@@ -82,24 +88,34 @@ input[type=submit] {
             <label for="email">E-Mmail*</label>
                 <input type="text"  name="email">
                 <br style="clear:both;" />
-            <label for="cMail">Comfirm E-Mail*</label>
+            <label for="cMail" text-ali>Comfirm E-Mail*</label>
                 <input type="text"  name="cMail">
                 <br style="clear:both;" />
             <label for="adress">Address*</label>
                 <input type="text"  name="adress">
                 <br style="clear:both;" />
-            <label for="city">City</label>
-                <input type="text"  name="city">
-            <label for="state">State</label>
-            <br style="clear:both;" />
-                <input type="text"  name="state">
+            <div class="location">
+                    <div class="separated">
+                        <label style = "text-align: center;" for="city">City</label>
+                        <input type="text"  name="city" style="width: 80%;">
+                        
+                    </div>
+                    <div class="separated">
+                        <label style = "text-align: center;" for="state">State</label>
+                        <input type="text"  name="state" style="width: 80%;">
+                    </div>
+                    
+            
+            </div>
+            
             <label for="postalcode">Zip/Postal Code</label>
                 <input type="text"  name="postalcode">
             <label for="country">Country*</label>
                 <input type="text"  name="country">
             <input id="checkbox" type="checkbox">
-
+            <br style="clear:both;" />
             <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+            <br style="clear:both;" />
             <input type="submit" value="Submit">
             
 
