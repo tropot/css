@@ -22,7 +22,6 @@ input {
 margin: 10px;
 }
 input[type=submit] {
-  width: 50%;
   padding: 14px 20px;
   margin : 25px;
   border: none;
@@ -31,21 +30,22 @@ input[type=submit] {
 }
 
 .forms{
+    width: 20%;
     display:block;
     padding: 1em;
     margin: 2em;
+    
 }
 .login{
     position: fixed;
-    top: 30px;
+    top:0px;
     right: 1300px;
     width: 520px;
     height: 1000px;
 }
 .registration{
-    
+    top:0px;
     position: fixed;
-    top: 30px;
     right:500px;
     width: 500px;
     height: 10000px;
@@ -79,6 +79,15 @@ input[type=submit] {
   color: white;
 }
 
+blockquote {
+  padding: 6px;
+  width: 400px;
+  position: absolute;
+  top:850px;
+  right: 700px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.0), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 1);
+}
 
 
 </style>
@@ -191,6 +200,13 @@ input[type=submit] {
         </form>
     </div>
 </div>
+<blockquote>
+    <p>
+      by clicking Sign Up, you have read and agree to the www.company.com <a href="#">Terms and conditions</a> and <a href="#">privacy policy</a>
+    </p>
+    
+  </blockquote>
+  
 
 
 </body>
