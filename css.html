@@ -2,6 +2,7 @@
 <html>
 <head>
 <style> 
+label { display: inline-block; width: 210px; text-align: left; }
 input[type=submit] {
   width: 50%;
   background-color: #c3eed3;
@@ -30,8 +31,8 @@ input[type=submit] {
     position: fixed;
     top: 180px;
     right:500px;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 10000px;
 }
 
 
@@ -43,11 +44,11 @@ input[type=submit] {
 <div class="forms" >
     <div class="login" >
         <form>
-            <label for="fname">First Name</label>
+            <label for="fname">Username</label>
             <br style="clear:both;" />
             <input type="text" id="fname" name="fname">
             <br style="clear:both;" />
-            <label for="lname">Last Name</label>
+            <label for="lname">Password</label>
             <br style="clear:both;" />
             
             <input type="text" id="lname" name="lname">
@@ -56,35 +57,45 @@ input[type=submit] {
     </div>
     <div class="registration" >
         <form>
-            <label for="fname">First Name</label>
+            <label for="fname">First Name*</label>
                 <input type="text"  name="fname">
-            <label for="lname">First Name</label>
+                <br style="clear:both;" />
+            <label for="lname">Last Name*</label>
                 <input type="text"  name="lname">
-            <label for="password">First Name</label>
+                <br style="clear:both;" />
+            <label for="password">Password*</label>
                 <input type="text"  name="password">
-            <label for="comfirmpassword">First Name</label>
+                <br style="clear:both;" />
+            <label for="comfirmpassword">Comfirm Password*</label>
                 <input type="text"  name="comfirmpassword">
-            <label for="month">First Name</label>
-                <input type="text"  name="month">
-            <label for="day">First Name</label>
-                <input type="text"  name="day">
-            <label for="year">First Name</label>
-                <input type="text"  name="year">
-            <label for="gender">First Name</label>
+                <br style="clear:both;" />
+            <label for="month">Date of Birth*</label>
+                <input type="text" placeholder="MM"  name="month" style="width: 5%;">
+                <input type="text" placeholder="DD" name="day" style="width: 5%;">
+                <input type="text" placeholder="YYYY" name="year" style="width: 10%;">
+            <label for="gender">Gender</label>
                 <input type="text"  name="gender">
-            <label for="phonenumber">First Name</label>
+                <br style="clear:both;" />
+            <label for="phonenumber">Mobile/Cell No.*</label>
                 <input type="text"  name="phonenumber">
-            <label for="email">First Name</label>
+                <br style="clear:both;" />
+            <label for="email">E-Mmail*</label>
                 <input type="text"  name="email">
-            <label for="adress">First Name</label>
+                <br style="clear:both;" />
+            <label for="cMail">Comfirm E-Mail*</label>
+                <input type="text"  name="cMail">
+                <br style="clear:both;" />
+            <label for="adress">Address*</label>
                 <input type="text"  name="adress">
-            <label for="city">First Name</label>
+                <br style="clear:both;" />
+            <label for="city">City</label>
                 <input type="text"  name="city">
-            <label for="state">First Name</label>
+            <label for="state">State</label>
+            <br style="clear:both;" />
                 <input type="text"  name="state">
-            <label for="postalcode">First Name</label>
+            <label for="postalcode">Zip/Postal Code</label>
                 <input type="text"  name="postalcode">
-            <label for="country">First Name</label>
+            <label for="country">Country*</label>
                 <input type="text"  name="country">
             <input id="checkbox" type="checkbox">
 
@@ -95,7 +106,7 @@ input[type=submit] {
         </form>
     </div>
 </div>
-  
+
 
 </body>
 </html>
