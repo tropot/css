@@ -86,6 +86,12 @@ blockquote {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.0), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 1);
 }
+.logforms{
+    width: 120%;
+    position: relative;
+    margin-left: 80px;
+    text-align: left;
+}
 
 
 </style>
@@ -95,9 +101,10 @@ blockquote {
 
 <div class="forms" >
     <div class="login" >
-        <h1>My Account Login</h1>
+        <h1 style="margin-left: 80px;text-align: left;">My Account Login</h1>
         <form>
-            <label for="fname">Username</label>
+            <div class = "logforms">
+                <label for="fname">Username</label>
             <br style="clear:both;" />
             
             <input type="text" id="fname" name="fname">
@@ -105,9 +112,12 @@ blockquote {
             <br/>
             <label for="lname">Password</label>
             <br style="clear:both;" />
-            
             <input type="text" id="lname" name="lname">
             <i style="margin-left: -28px;margin-top: 12px;position: absolute;" class="fa fa-lock icon"></i><br/>
+            </div>
+            
+            
+            
             <div style="margin-left: 60px;">
                 
                 <input style = "height: 50px;width:170px;font-size: larger;color:white;background-color: orange;" type="submit" value="Log In" name="loginBtn">
@@ -127,7 +137,7 @@ blockquote {
         </form>
     </div>
     <div class="registration" >
-        <h1>Registration</h1>
+        <h1 style="text-align: left;">Registration</h1>
         <form>
             
             <label for="fname">First Name*</label>
